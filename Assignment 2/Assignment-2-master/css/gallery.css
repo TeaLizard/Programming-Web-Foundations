@@ -1,0 +1,81 @@
+#img1{
+    grid-area: img1;
+    clip-path: polygon(40.18% -1.79%, 49.97% -1.42%, 100% 50%, 50% 100%, 0% 50%, 11.24% 38.74%, 14.71% 25.52%, 17.22% 13.26%, 26.53% 2.22%);
+}
+
+#img2{
+    grid-area: img2;
+    clip-path: polygon(50% 0%, 56.77% 2.6%, 61.95% 12.61%, 63.08% 36.75%, 65.14% 54.53%, 83.28% 76.79%, 87.22% 99.34%, 19.9% 99.41%, 21.74% 75.6%, 38.85% 60.05%, 39.43% 53.48%, 36.23% 38.55%, 34.75% 18.74%, 41.83% 6.16%);
+}
+
+#img3{
+    grid-area: img3;
+    clip-path: polygon(86.89% 6.22%, 94.67% 44.67%, 68.67% 99.56%, 25.78% 57.56%, 29.06% 6.67%);
+}
+
+#img4{
+    grid-area: img4;
+    clip-path: polygon(57.33% 9.52%, 97.67% 26.79%, 95.3% 77.34%, 50% 100%, 12.21% 95.21%, 0% 50%, 23.82% 20.14%);
+}
+
+#img5{
+    grid-area: img5;
+    clip-path: polygon(50% 0%, 98.71% 40.85%, 98.93% 85.25%, 50% 100%, 0.58% 65.96%, -0.65% 28.05%, 8.34% 9.93%);
+}
+
+#img6{
+    grid-area: img6;
+    clip-path: polygon(50% 0%, 87.64% 11.34%, 79.64% 97.94%, 21.05% 98.46%, 8.88% 9.79%);
+}
+
+#img7{
+    grid-area: img7;
+    clip-path: polygon(37.27% 2.19%, 58.78% 43.14%, 103.14% 56.82%, 102.91% 102.46%, -2.72% 103.28%, -1.81% 30.87%, 26.93% 30.44%);
+}
+
+#img8{
+    grid-area: img8;
+    clip-path: polygon(24.16% 34.04%, 102.05% 41.33%, 103% 103.19%, 50% 100%, 4.49% 69.15%, 4.99% 1.5%, 16.6% 1.87%);
+}
+
+#img9{
+    grid-area: img9;
+    clip-path: polygon(53% 0%, 85.94% 13.57%, 100% 50%, 90.44% 107.56%, 8% 106.55%, 0% 50%, 17.56% 18.79%);
+}
+
+main img{
+    overflow: hidden;
+}
+
+main #images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 .";
+    gap: 1rem;
+
+}
+
+@media only screen and (max-width: 900px){
+
+    main #images{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9";
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1360px){
+
+    main #images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+        gap: 1rem;
+    
+    }
+}
+

@@ -1,0 +1,54 @@
+#name{
+    grid-area: name;
+}
+
+#name-label{
+    grid-area: name-label;
+    width: fit-content;
+}
+
+#email{
+    grid-area: email;
+}
+
+#email-label{
+    grid-area: email-label;
+    width: fit-content;
+}
+
+#phone{
+    grid-area: phone;
+}
+
+#phone-label{
+    grid-area: phone-label;
+    width: fit-content;
+}
+#comment{
+    grid-area: comment;
+}
+
+#comment-label{
+    grid-area: comment-label;
+    width: fit-content;
+}
+
+form{
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: max-content max-content max-content 10rem;
+    grid-template-areas: "name-label name" "email-label email" "phone-label phone" "comment-label comment";
+    gap: 0.3rem 1rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+
+    main{
+        min-height: 0px;
+    }
+
+    aside{
+        min-height: 40vh;
+    }
+}

@@ -1,0 +1,309 @@
+/* Owen Williams 8932017 || Assignment #1 */
+
+
+html{
+    font-size: 20px;
+}
+
+a{
+    color: black;
+}
+
+body{
+    display: grid;
+    width: auto;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font: 1em sans-serif, Arial, Helvetica, cursive;
+    background-color: rgb(224, 187, 145);
+}
+
+h1, h2{
+    color: black;
+    font-variant: small-caps;
+}
+
+.headAndFeet{
+    border: 0.2rem solid black;
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    margin: auto;
+    background-image: linear-gradient(red, yellow);
+    width: 95%;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    height: 3rem;
+    width: 24vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav ul{
+    padding: 0%;
+    margin: 0%;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 3rem;
+    grid-template-areas: ". home media contact .";
+}
+
+nav li{
+    background-color: #eef224d4;
+}
+
+#submenu{
+    display: none;
+}
+
+#home, #media, #contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 0.2rem solid black;
+    border-top: none;
+}
+
+#home{
+    grid-area: home;
+    border-right: 0.1rem solid black;
+    border-bottom-left-radius: 0.75rem;
+}
+
+#media{
+    grid-area: media;
+    border-right: 0.1rem solid black;
+    border-left: 0.1rem solid black;
+}
+
+#contact{
+    grid-area: contact;
+    border-left: 0.1rem solid black;
+    border-bottom-right-radius: 0.75rem;
+}
+
+#media:hover #submenu{
+    display: grid;
+    grid-template-columns: 24vw 24vw;
+    grid-template-rows: 3rem;
+    grid-template-areas: "gallery video";
+    position: absolute;
+    margin-top: 3rem;
+}
+
+nav li:hover{
+    background-color: peru;
+}
+
+#gallery, #video{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 0.2rem solid black;
+    border-top: none;
+}
+
+#gallery{
+    grid-area: gallery;
+    border-right: 0.1rem solid black;
+    border-bottom-left-radius: 0.75rem;
+}
+
+#video{
+    grid-area: video;
+    border-left: 0.1rem solid black;
+    border-bottom-right-radius: 0.75rem;
+}
+
+main{
+    grid-area: main;
+    margin: 0.05rem;
+    padding: 0.05rem;
+    min-height: 61vh;
+}
+
+.grid{
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer";
+}
+
+aside{
+    /* grid-column: 2; */
+    grid-area: aside;
+    /* width: 30%; */
+    margin: 0.05rem;
+    padding: 0.05rem;
+}
+
+aside h2{
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+main #elon-bio-pic{
+    float: left;
+    border: 0.1rem solid dimgray;
+    clip-path: polygon(50.33% 9px, 70.19% 6.48%, 80.85% 20.19%, 76.94% 32.25%, 75.9% 43.26%, 71.26% 54.63%, 43.07% 87.33%, 24.04% 52.39%, 22.54% 38.21%, 23.93% 25.92%, 76px 16.3%, 32.97% 7.8%);
+    shape-outside: polygon(50.33% 9px, 71.51% 4.32%, 83.49% 19.92%, 79.58% 33.33%, 78.87% 43.26%, 74.56% 54.36%, 43.07% 87.33%, 24.04% 52.39%, 22.54% 38.21%, 23.93% 25.92%, 76px 16.3%, 32.97% 7.8%);
+}
+
+main #elon-bio{
+    max-width: 30rem;
+}
+
+main #sec2{
+    clear: both;
+}
+
+main #table{
+    border-collapse: collapse;
+    
+}
+
+main #table-row-1{
+    background-color: red;
+}
+
+main #table-row-2, main tbody{
+    background-color: yellow;
+}
+
+main th, main td{
+    border: 0.05rem black solid;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+/* main #table-title{
+    grid-area: table-title;
+}
+main #table-blank{
+    grid-area: table-blank;
+}
+main #table-q1{
+    grid-area: table-q1;
+}
+main #table-q2{
+    grid-area: table-q2;
+}
+main #table-q3{
+    grid-area: table-q3;
+}
+main #table-q4{
+    grid-area: table-q4;
+}
+main #table-2022{
+    grid-area: table-2022;
+}
+main #table-q1-2022{
+    grid-area: table-q1-2022;
+}
+main #table-q2-2022{
+    grid-area: table-q2-2022;
+}
+main #table-q3-2022{
+    grid-area: table-q3-2022;
+}
+main #table-q1-2021{
+    grid-area: table-q1-2021;
+}
+main #table-q2-2021{
+    grid-area: table-q2-2021;
+}
+main #table-q3-2021{
+    grid-area: table-q3-2021;
+}
+main #table-q4-2021{
+    grid-area: table-q4-2021;
+}
+
+main th, td{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+main #sec3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-template-areas: "table-title table-title table-title table-title table-title"
+                        "table-blank table-q1 table-q2 table-q3 table-q4"
+                        "table-2022 table-q1-2022 table-q2-2022 table-q3-2022 table-blank"
+                        "table-2021 table-q1-2021 table-q2-2021 table-q3-2021 table-q4-2021";
+} */
+
+/* main figcaption{
+    font-weight: bold;
+    font-variant: small-caps;
+} */
+
+main q{
+    font-size: 1.25rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+aside{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/29/SpX_CRS-2_launch_-_further_-_cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+aside ul li{
+    list-style: none;
+    line-height: 2rem;
+}
+
+aside ul>li>a{
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+aside a:hover{
+    color: indigo;
+}
+
+footer{
+    grid-area: footer;
+}
+
+footer p{
+    font-size: 0.75rem;
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+
+    html{
+        font-size: 12px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+    }
+}

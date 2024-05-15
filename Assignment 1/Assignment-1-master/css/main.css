@@ -1,0 +1,100 @@
+/* Owen Williams 8932017 || Assignment #1 */
+
+
+/* html{
+    
+} */
+
+body{
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    font: 1em sans-serif, Arial, Helvetica, cursive;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+/* #sec1{
+    order: 1;
+}
+
+#sec2{
+    order: 3;
+}
+
+#sec3{
+order: 3;
+} */
+
+h1, h2{
+    color: dimgray;
+    font-variant: small-caps;
+}
+
+.headAndFeet{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+}
+
+main{
+    /* flex-grow: 1; */
+    width: 60vw;
+    float: left;
+    margin: 1px;
+    padding: 1px;
+}
+
+.img{
+    border: 2px solid dimgray;
+}
+
+figcaption{
+    /* text-indent: 2.5em; */
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+q{
+    font-size: 1.25em;
+    font-family: cursive;
+    font-style: italic;
+}
+
+aside{
+    /* order: 2; */
+    width: 30vw;
+    /* max-width: 260px; */
+    float: right;
+    margin: 1px;
+    padding: 1px;
+}
+
+ul li{
+    list-style: none;
+    line-height: 2em;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+aside a:hover{
+    color: indigo;
+}
+
+footer{
+    clear: both;
+}
+
+footer p{
+    font-size: 0.75em;
+    color: indigo;
+}

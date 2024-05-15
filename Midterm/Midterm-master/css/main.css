@@ -1,0 +1,85 @@
+/* Owen Williams 8932017 || Midterm Part B */
+
+
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    font: normal normal normal 1em 1.5em sans-serif;
+    /* font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: verdana,sans-serif; */
+}
+
+h1{
+    color: red;
+    font-size: 30px;
+}
+
+main section{
+    height: 70vh;
+}
+
+h2{
+    color: blue;
+    font-size: 20px;
+}
+
+img{
+    border: 2px solid black;
+    height: 80%;
+    width: 90%;
+}
+
+figure{
+    background-color: bisque;
+    width: 45%;
+    height: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+#fig1{
+    float: left;
+}
+
+#fig2{
+    float: right;
+}
+
+figcaption{
+    font-weight: 700;
+    font-size: 1.1em;
+    color: brown;
+    padding: 5px;
+}
+
+section{
+    clear: both;
+}
+
+section a{
+    color: purple;
+}
+
+section a:hover{
+    color: red;
+}
+
+section li{
+    list-style: square;
+    line-height: 2.5em;
+}
+
+header, footer{
+    background-color: aquamarine;
+}
+
+.structural{
+    margin: 10px;
+    padding: 10px;
+}
+
